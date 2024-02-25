@@ -1,0 +1,81 @@
+/* Top welcome section */
+.welcome-section {
+  margin: 0;
+  padding: 0;
+  background:url(assets/bg.jpg);
+  background-size: cover; 
+  background-position: center; 
+  height: 500px;
+  color: #4d3319;
+
+}
+
+.container {
+  margin: 0 auto;
+  padding: 20px;
+  background:url(assets/bg.jpg);
+
+}
+
+header, footer {
+  background-color: rgb(255, 173, 41); /* Semi-transparent black background for header and footer */
+  color: white;
+  padding: 10px;
+}
+
+
+/* Navigation Bar */
+nav {
+  background-color: rgb(95, 228, 95); /* Semi-transparent white background for navigation bar */
+  padding: 10px;
+
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+  align-items: center;
+
+}
+
+
+
+nav ul li a {
+  text-decoration: none;
+  color: #4d3319; /* Dark brown */
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+  color: #fff; /* White */
+}
+
+.navbar-list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  color: #4d3319;
+  justify-content: flex-end; /* Move contents to the right */
+}
+
+.navbar-list .nav-item {
+  margin-left: 20px; /* Adjust spacing between items if necessary */
+}
+
+/* Search Icon */
+.search-icon {
+  font-size: 20px; /* Adjust the size of the icon */
+}
+
+.search-icon i {
+  color: #4d3319; /* Dark brown color for the icon */
+}
