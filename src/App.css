@@ -1,34 +1,37 @@
 /* Top welcome section */
 .welcome-section {
-  margin: 0;
+  margin: 10px;
   padding: 0;
-  background:url(assets/bg.jpg);
+  background: url(assets/bg.jpg);
   background-size: cover; 
   background-position: center; 
-  height: 500px;
-  color: #4d3319;
-
+  height: 450px;
+  color: #ffffff;
+  display: flex;
+  justify-content: center; /* Center content horizontally */
+  align-items: center;
+  text-align: center;
 }
+
+
 
 .container {
   margin: 0 auto;
-  padding: 20px;
-  background:url(assets/bg.jpg);
-
+  width: 85%;
 }
 
 header, footer {
-  background-color: rgb(255, 173, 41); /* Semi-transparent black background for header and footer */
   color: white;
-  padding: 10px;
+  padding: 0px;
+  background-color: transparent; /* Make the navigation bar transparent */
+  border-top: 1px solid white;
 }
 
-
+/* Navigation Bar */
 /* Navigation Bar */
 nav {
-  background-color: rgb(95, 228, 95); /* Semi-transparent white background for navigation bar */
-  padding: 10px;
-
+  background-color: transparent; /* Make the navigation bar transparent */
+  border-bottom: 1px solid white; /* Add a white border at the bottom */
 }
 
 nav ul {
@@ -40,22 +43,22 @@ nav ul {
 nav ul li {
   display: inline;
   margin-right: 20px;
-  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
 
 }
 
-
-
 nav ul li a {
   text-decoration: none;
-  color: #4d3319; /* Dark brown */
+  color: #ffffff;
   font-weight: bold;
-  font-size: 16px;
+  font-size: 20px;
   transition: color 0.3s ease-in-out;
 }
 
 nav ul li a:hover {
-  color: #fff; /* White */
+  color: #4f4b4b; /* White */
 }
 
 .navbar-list {
@@ -63,19 +66,18 @@ nav ul li a:hover {
   margin: 0;
   padding: 0;
   display: flex;
-  color: #4d3319;
+  color: #ffffff;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   justify-content: flex-end; /* Move contents to the right */
 }
 
 .navbar-list .nav-item {
-  margin-left: 20px; /* Adjust spacing between items if necessary */
+  margin-left: 0px; /* Adjust spacing between items if necessary */
 }
 
-/* Search Icon */
-.search-icon {
-  font-size: 20px; /* Adjust the size of the icon */
-}
 
-.search-icon i {
-  color: #4d3319; /* Dark brown color for the icon */
+/* Set background image for the whole page */
+body {
+  background: url(assets/bg.jpg) no-repeat fixed center;
+  background-size: cover;
 }
