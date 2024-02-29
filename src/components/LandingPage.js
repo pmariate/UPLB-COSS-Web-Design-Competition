@@ -7,14 +7,19 @@ import { motion } from "framer-motion"
 import { FaFlag } from "react-icons/fa";
 import { FaBullseye } from "react-icons/fa";
 import { FaTrophy } from "react-icons/fa";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebookSquare, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
+
 
 const LandingPage = () => {
   return (
+    
     <div className="container">
       <nav>
         <ul className="navbar-list">
-          <li><a href="#about">About Us</a></li>
-          <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#actions">Recent Activities</a></li>
+        <li><a href="#success">Objectives</a></li>
+          <li><a href="#about">SDGs</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
@@ -46,6 +51,8 @@ const LandingPage = () => {
                   <h3 style={{ color: '#ADDFAD', fontSize: '22px', fontFamily: 'Helvetica' }}>Lorem ipsum dolor sit amet. At doloribus deleniti sed facere nostrum quo nulla pariatur ut voluptatibus amet ut galisum dolores non dignissimos reiciendis qui minus obcaecati.</h3>
               </motion.div>
             
+              <h1 style={{ color: 'white', fontSize: '55px', fontFamily: 'PT Serif', marginBottom : '12px' }}>Get out and explore</h1>
+              <h3 style={{ color: '#ADDFAD', fontSize: '18px', fontFamily: 'Helvetica' }}>The 2030 Agenda for Sustainable Development, adopted by all United Nations Member States in 2015, provides a shared blueprint for peace and prosperity for people and the planet, now and into the future. At its heart are the 17 Sustainable Development Goals (SDGs), which are an urgent call for action by all countries - developed and developing - in a global partnership.</h3>
             </div>
           </div>
         </div>
@@ -86,16 +93,21 @@ const LandingPage = () => {
 
       {/* Other sections */}
       <section id="about">
-        <h2>About Us</h2>
-        <p>This is where you can describe your company or product.</p>
+        <h2 style={{ margin: '30px 0 30px 55px', fontSize: '44px'}}>17 SDGs</h2>
+
+        <img style={{ margin: '20px 0 80px 255px' }} src={require('../assets/board.png')} alt="Logo" />
       </section>
-      <section id="gallery">
-        <h2>Gallery</h2>
-        {/* Your gallery component here */}
-      </section>
+      
+
       <footer id="contact">
-        <p>Contact us: email@example.com</p>
-      </footer>
+  <p>Email: pmariate@up.edu.ph || cgberana@up.edu.ph</p>
+  <p>&copy; Copyright 2024; Designed by Ariate & Berana</p>
+  <div className="social-icons">
+    <a ><FontAwesomeIcon icon={faFacebookSquare} /></a>
+    <a ><FontAwesomeIcon icon={faLinkedin} /></a>
+    <a ><FontAwesomeIcon icon={faTwitter} /></a>
+  </div>
+</footer>
     </div>
   );
 };
