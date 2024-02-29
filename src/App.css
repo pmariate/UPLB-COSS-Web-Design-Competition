@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
 /* Top welcome section */
 .welcome-section {
   margin: 10px;
   padding: 0;
-  background: url(assets/bg.jpg);
-  background-size: cover; 
+  /* background: url(assets/bg.jpg);
+  background-size: cover;  */
   background-position: center; 
   height: 450px;
   color: #ffffff;
@@ -31,7 +33,7 @@ header, footer {
 /* Navigation Bar */
 nav {
   background-color: transparent; /* Make the navigation bar transparent */
-  border-bottom: 1px solid white; /* Add a white border at the bottom */
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5); /* Add a white border at the bottom */
 }
 
 nav ul {
@@ -76,8 +78,184 @@ nav ul li a:hover {
 }
 
 
+.flexRow {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.flexCol {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+
+/* Common Actions */
+
+
+#actions {
+  color: white;
+  font-family: "PT serif", sans-serif;
+  margin-top: 50px;
+  padding: 0 50px 0 50px;
+}
+
+.action {
+  flex: 1;
+  padding: 20px 20px 0 20px;
+}
+
+.action a{
+  text-decoration: none; 
+  color: #ADDFAD;
+  font-family: 'Helvetica'; 
+  font-size: 10px;
+  font-weight: bold;
+}
+
+.active {
+  border-top: 1px solid #ADDFAD;
+  border-width: 85%;
+}
+
+
+/* Preview */
+
+#preview {
+  color: white;
+  margin-top: 50px;
+  min-height: 300px;
+  padding: 0 50px 0 50px;
+}
+
+#imageContainer {
+  flex: 1;
+  padding-right: 20px;
+}
+
+#image {
+  width: 100%;
+  background: url(assets/children.jpg) center;
+  background-size: cover;
+  border-radius: 15px 15px 15px 15px;
+}
+
+#description {
+  flex: 1; 
+  padding: 20px 20px 20px 20px;
+}
+
+#donate {
+  color: white;
+  font-family: 'Helvetica';
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #2C2B27;
+  width: 150px;
+  padding: 10px;
+  border-radius: 15px 15px 15px 15px;
+  border: none;
+  cursor: pointer;
+}
+
+
+/* Recent */
+#recent-post {
+  margin-top: 50px;
+  padding: 0 50px 0 50px;
+}
+
+#recent-container {
+  overflow-x: scroll;
+}
+
+#recent-container::-webkit-scrollbar {
+  height: 10px;
+}
+
+#recent-container::-webkit-scrollbar-track {
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 15px;
+}
+
+#recent-container::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.9);
+  border-radius: 15px;
+}
+
+.recent {
+  flex: 1;
+  justify-content: flex-end;
+  min-width: 270px;
+  min-height: 400px;
+  margin: 0 20px 10px 0;
+  border-radius: 15px 15px 15px 15px;
+}
+
+.recent h6, .recent h4 {
+  margin: 0 25px 20px 25px;
+  font-family: 'Helvetica';
+  text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.recent h6 {
+  color: lightgray;
+  font-size: 10px;
+}
+
+#recent1 {
+  background: url(assets/tupad.jpg) no-repeat center;
+  background-size: cover;
+}
+
+#recent2 {
+  background: url(assets/education.jpg) no-repeat center;
+  background-size: cover;
+}
+
+#recent3 {
+  background: url(assets/health.jpg) no-repeat center;
+  background-size: cover;
+}
+
+#recent4 {
+  background: url(assets/energy.jpg) no-repeat center;
+  background-size: cover;
+}
+
+
+/* Success */
+
+#success {
+  margin-top: 50px;
+  padding: 0 50px 0 50px;
+}
+
+.success-info {
+  flex: 1;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.success-info h3, h6 {
+  margin: 5px;
+  text-align: center;
+  padding: 0 20px 0 20px;
+}
+
+.success-info h3 {
+  font-size: 40px;
+}
+
+.success-info h6 {
+  font-size: 18px;
+}
+
 /* Set background image for the whole page */
 body {
   background: url(assets/bg.jpg) no-repeat fixed center;
   background-size: cover;
+  font-family: 'PT Serif', sans-serif;
+  color: white;
 }

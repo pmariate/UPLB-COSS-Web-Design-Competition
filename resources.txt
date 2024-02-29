@@ -3,3 +3,8 @@ Images:
 2. "image2.png" - CC BY-SA 3.0
 
 bg - https://www.freepik.com/premium-photo/futuristic-scifi-minimalist-empty-room-with-product-presentation-3d-rendering_25313312.htm
+children - https://www.unicef.org/philippines/sites/unicef.org.philippines/files/styles/hero_extended/public/UNIPH2019018.JPG.webp?itok=xAdgE9aX
+tupad - https://lasamonline.com/wp-content/uploads/2022/11/2EC51A4B-D3EE-491E-8B34-CCBFA5A04E76-scaled.jpeg
+education - https://www.unicef.org/philippines/sites/unicef.org.philippines/files/styles/hero_extended/public/UNIPH2019008.jpg.webp?itok=hhpukj_r
+health - https://www.bworldonline.com/wp-content/uploads/2022/03/face-mask.jpg
+energy - https://wwf.org.ph/wp-content/uploads/2017/11/Kirahon-Solar-Park-Renewable-Photo-1.jpg
