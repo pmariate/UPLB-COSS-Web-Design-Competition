@@ -1,5 +1,9 @@
 import React from 'react';
 import '../App.css'; // Import CSS file
+import CommontActions from './CommonActions';
+import Preview from './Preview';
+import Recents from './Recents';
+import { motion } from "framer-motion"
 import { FaFlag } from "react-icons/fa";
 import { FaBullseye } from "react-icons/fa";
 import { FaTrophy } from "react-icons/fa";
@@ -19,76 +23,42 @@ const LandingPage = () => {
         <div className="container">
           <div className="row">
             <div className="header-text">
-              <h1 style={{ color: 'white', fontSize: '55px', fontFamily: 'PT Serif', marginBottom : '12px' }}>Get out and explore</h1>
-              <h3 style={{ color: '#ADDFAD', fontSize: '22px', fontFamily: 'Helvetica' }}>Lorem ipsum dolor sit amet. At doloribus deleniti sed facere nostrum quo nulla pariatur ut voluptatibus amet ut galisum dolores non dignissimos reiciendis qui minus obcaecati.</h3>
+              <motion.div
+                variants={{
+                  hidden: { opacity: 0, x: -75 },
+                  visible: { opacity: 1, x: 0 }
+                }}
+                initial="hidden"
+                animate="visible"
+                transition={{duration: 1, delay: 0.25 }}
+              >
+                  <h1 style={{ color: 'white', fontSize: '55px', fontFamily: 'PT Serif', marginBottom : '12px' }}>Get out and explore</h1>
+              </motion.div>
+              <motion.div
+                variants={{
+                  hidden: { opacity: 0, x: -75 },
+                  visible: { opacity: 1, x: 0 }
+                }}
+                initial="hidden"
+                animate="visible"
+                transition={{duration: 1, delay: 0.5 }}
+              >
+                  <h3 style={{ color: '#ADDFAD', fontSize: '22px', fontFamily: 'Helvetica' }}>Lorem ipsum dolor sit amet. At doloribus deleniti sed facere nostrum quo nulla pariatur ut voluptatibus amet ut galisum dolores non dignissimos reiciendis qui minus obcaecati.</h3>
+              </motion.div>
+            
             </div>
           </div>
         </div>
       </section>
 
       {/* Common Actions */}
-      <section id="actions" className="flexRow">
-        <div className="action flexCol active">
-          <h4>Provide food and clean water for the children</h4>
-          <a href="">READ MORE</a>
-        </div>
-
-        <div className="action flexCol">
-          <h4>Contribute to renewable energy source</h4>
-          <a href="">READ MORE</a>
-        </div>
-
-        <div className="action flexCol">
-          <h4>Promote good health and quality education</h4>
-          <a href="">READ MORE</a>
-        </div>
-
-        <div className="action flexCol">
-          <h4>Restore habitats for the native animals</h4>
-          <a href="">READ MORE</a>
-        </div>
-      </section>
+      <CommontActions />
 
       {/* Preview */}
-      <section id="preview" className="flexRow">
-        <div id="imageContainer" className="flexRow">
-          <div id="image" className="flexRow">
-          </div>
-        </div>
-        <div id="description" className="flexCol">
-          <div>
-            <h2 style={{ margin: '0', fontSize: '40px'}}>Children's Welfare</h2>
-            <p>Efforts to enhance family planning services and childhood vaccinations also require immediate attention to ensure universal access to healthcare services.</p>
-          </div>
-          <button id="donate">Donate</button>
-        </div>
-      </section>
+      <Preview />
 
       {/* Recent */}
-      <section id="recent-post" className="flexCol">
-        <h2 style={{ margin: '0 0 20px 0', fontSize: '40px'}}>Recent Activities</h2>
-        <div id="recent-container" className="flexRow">
-          <div id="recent1" className="recent flexCol">
-            <h4>Provide job opportunities to displaced workers</h4>
-            <h6>Los Banos, Laguna</h6>
-          </div>
-
-          <div id="recent2" className="recent flexCol">
-            <h4>Achieve quality education from less-priviliged students</h4>
-            <h6>Gumaca, Quezon</h6>
-          </div>
-
-          <div id="recent3" className="recent flexCol">
-            <h4>Donate medicine and supplement subsidies</h4>
-            <h6>Bacoor, Cavite</h6>
-          </div>
-
-          <div id="recent4" className="recent flexCol">
-            <h4>Build renewable sources of energy</h4>
-            <h6>Metro Manila, Manila</h6>
-          </div>
-        </div>
-      </section>
+      <Recents />
 
       {/* Success */}
       <section id="success" className="flexCol">

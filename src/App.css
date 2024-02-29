@@ -168,6 +168,7 @@ nav ul li a:hover {
 
 #recent-container {
   overflow-x: scroll;
+  overflow-y: hidden;
 }
 
 #recent-container::-webkit-scrollbar {
@@ -238,7 +239,7 @@ nav ul li a:hover {
   align-items: center;
 }
 
-.success-info h3, h6 {
+.success-info h3, .success-info h6 {
   margin: 5px;
   text-align: center;
   padding: 0 20px 0 20px;
