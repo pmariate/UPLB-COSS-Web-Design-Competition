@@ -48,11 +48,9 @@ const LandingPage = () => {
                 animate="visible"
                 transition={{duration: 1, delay: 0.5 }}
               >
-                  <h3 style={{ color: '#ADDFAD', fontSize: '22px', fontFamily: 'Helvetica' }}>Lorem ipsum dolor sit amet. At doloribus deleniti sed facere nostrum quo nulla pariatur ut voluptatibus amet ut galisum dolores non dignissimos reiciendis qui minus obcaecati.</h3>
+              <h3 style={{ color: '#ADDFAD', fontSize: '18px', fontFamily: 'Helvetica' }}>The 2030 Agenda for Sustainable Development, adopted by all United Nations Member States in 2015, provides a shared blueprint for peace and prosperity for people and the planet, now and into the future. At its heart are the 17 Sustainable Development Goals (SDGs), which are an urgent call for action by all countries - developed and developing - in a global partnership.</h3>
               </motion.div>
             
-              <h1 style={{ color: 'white', fontSize: '55px', fontFamily: 'PT Serif', marginBottom : '12px' }}>Get out and explore</h1>
-              <h3 style={{ color: '#ADDFAD', fontSize: '18px', fontFamily: 'Helvetica' }}>The 2030 Agenda for Sustainable Development, adopted by all United Nations Member States in 2015, provides a shared blueprint for peace and prosperity for people and the planet, now and into the future. At its heart are the 17 Sustainable Development Goals (SDGs), which are an urgent call for action by all countries - developed and developing - in a global partnership.</h3>
             </div>
           </div>
         </div>
@@ -93,9 +91,16 @@ const LandingPage = () => {
 
       {/* Other sections */}
       <section id="about">
-        <h2 style={{ margin: '30px 0 30px 55px', fontSize: '44px'}}>17 SDGs</h2>
+        <h2 style={{ margin: '30px 0 30px 55px', fontSize: '44px' }}>17 SDGs</h2>
 
-        <img style={{ margin: '20px 0 80px 255px' }} src={require('../assets/board.png')} alt="Logo" />
+        <motion.img
+          style={{ margin: '20px 0 80px 255px' }}
+          src={require('../assets/board.png')}
+          alt="Logo"
+          initial={{ opacity: 0, y: -50 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 1 }}
+        />
       </section>
       
 
